@@ -1,3 +1,32 @@
+# install Node.js and npm using NVM
+NVM (Node Version Manager) is a bash script used to manage multiple active Node.js versions. NVM allows us to install and uninstall any specific Node.js version which means we can have any number of Node.js versions we want to use or test.
+To install Node.js and npm using NVM on your CentOS system, follow these steps:
+
+## Install NVM (Node Version Manager)
+To download the nvm install script run the following command:
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+The script will clone the nvm repository from Github to ~/.nvm and add the script Path to your Bash or ZSH profile.
+```
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+As the output above shows, you should either close and reopen your terminal or run the commands to add the path to nvm script to your current session.
+
+To verify that nvm was properly installed type:
+```
+nvm --version
+```
+
+```
+0.33.11
+```
+
 # Install Node.js using NVM On CentOS 7
 
 Now that the nvm tool is installed we can install the latest available version of Node.js, by typing:
@@ -19,8 +48,9 @@ Verify the Node.js version, by typing:
 ```
 node --version
 ```
+```
 v10.1.0
-
+```
 ## Install multiple Node.js versions using NVM
 Let's install two more versions, the latest LTS version and version 8.12.0
 
