@@ -73,5 +73,6 @@ default -> 10.13.0 (-> v10.13.0)
 ## Install development tools
 To be able to build native modules from npm we will need to install the development tools and libraries:
 
+```
 sudo yum install gcc-c++ make
-Conclusion
+```
