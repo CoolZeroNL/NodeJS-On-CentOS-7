@@ -5,6 +5,7 @@ Now that the nvm tool is installed we can install the latest available version o
 nvm install node
 ```
 
+```
 Downloading and installing node v11.0.0...
 Downloading https://nodejs.org/dist/v11.0.0/node-v11.0.0-linux-x64.tar.xz...
 ######################################################################## 100.0%
@@ -12,12 +13,12 @@ Computing checksum with sha256sum
 Checksums matched!
 Now using node v11.0.0 (npm v6.4.1)
 Creating default alias: default -> node (-> v11.0.0)
-Verify the Node.js version, by typing:
+```
 
+Verify the Node.js version, by typing:
 ```
 node --version
 ```
-
 v10.1.0
 
 ## Install multiple Node.js versions using NVM
